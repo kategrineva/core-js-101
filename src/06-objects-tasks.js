@@ -252,10 +252,6 @@ const cssSelectorBuilder = {
   combine(selector1, combinator, selector2) {
     return new CssBuilder().combine(selector1, combinator, selector2);
   },
-
-  stringify() {
-    return '';
-  },
 };
 
 
