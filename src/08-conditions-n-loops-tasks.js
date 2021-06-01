@@ -335,7 +335,7 @@ function isBracketsBalanced(str) {
   do {
     const lstart = l;
     for (let i = 0; i < brackets.length; i += 1) {
-      ending = ending.replaceAll(brackets[i], '');
+      ending = ending.split(brackets[i]).join('');
     }
     l = ending.length;
     if (lstart === l) break;
